@@ -1,0 +1,3104 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>DsAlgo Extent Report</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report dark">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">DsAlgo Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Nov 24, 2023 03:06:53 pm</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Nov 24, 2023 03:06:53 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Nov 24, 2023 03:12:08 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>7</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='87%'>
+<b>7</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='12%'><b>1</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='96%'><b>30</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='3%'><b>1</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='99%'><b>433</b> steps passed</small></div>
+<div>
+<small data-tooltip='0%'><b>1</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"DS Algo Portal":17.468,"Registration":9.832,"Sign in to DS Algo Portal":17.056,"Data Structure Introduction Module":32.071,"Linked List Module":125.13,"Stack Module":22.319,"Queue Module":28.396,"Array in Data Structure Module":62.61
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@tag</td>
+<td>8</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>user</td>
+<td>Skywalkers</td>
+</tr>
+<tr>
+<td>Broswer</td>
+<td>Google Chrome</td>
+</tr>
+<tr>
+<td>Project</td>
+<td>DsAlgoTest</td>
+</tr>
+<tr>
+<td>OS</td>
+<td>Windows</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 7,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 30,
+failChild: 1,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 433,
+failGrandChild: 1,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script><div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@tag</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">DS Algo Portal</p>
+            <p class="text-sm">
+              <span>3:06:53 pm</span> / <span>00:00:17:468</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">DS Algo Portal</h5>
+<span class='badge badge-success'>11.24.2023 3:06:53 pm</span>
+<span class='badge badge-danger'>11.24.2023 3:07:11 pm</span>
+<span class='badge badge-default'>00:00:17:468</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>DS Algo Portal</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_launch_chrome_browser()">
+                <span>Given User launch Chrome Browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_opens_url(java.lang.String)">
+                <span>And User opens URL "https://dsportalapp.herokuapp.com"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_should_land_in_ds_algo_portal_page()">
+                <span>Then User should Land In DS Algo portal page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_click_on_get_started()">
+                <span>When User click on Get Started</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_should_be_redirected_to_homepage()">
+                <span>Then User should be redirected to homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.page_title_should_be(java.lang.String)">
+                <span>And Page title should be "NumpyNinja"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_should_see_six_panes_with_different_data_structures()">
+                <span>And User should see six panes with different data structures</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_opens_home_page()">
+                <span>Given User opens Home Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_click_on_data_structures_drop_down()">
+                <span>When User click on Data Structures drop down</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_should_see_six_different_data_structure_entries_in_that_drop_down()">
+                <span>Then User should see six different data structure entries in that drop down</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_click_any_data_structures_item_from_the_drop_down_without_sign_in()">
+                <span>When User click any data structures item from the drop down without Sign in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.it_should_alert_the_user_with_the_message(java.lang.String)">
+                <span>Then It should alert the user with the message "You are not logged in"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_click_on_get_started_below_the_data_structure()">
+                <span>When User click on Get Started below the data structure</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.it_should_alert_the_user_with_the_message(java.lang.String)">
+                <span>Then It should alert the user with the message "You are not logged in"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_click_on_sign_in()">
+                <span>When User click on Sign in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_should_be_redirected_to_sign_in_page()">
+                <span>Then User should be redirected to Sign in page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.page_title_will_be(java.lang.String)">
+                <span>And Page title will be "Login"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_click_on_register()">
+                <span>When User click on Register</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_should_be_redirected_to_register_form()">
+                <span>Then User should be redirected to Register form</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.page_title_will_be(java.lang.String)">
+                <span>And Page title will be "Registration"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="27"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Registration</p>
+            <p class="text-sm">
+              <span>3:07:11 pm</span> / <span>00:00:09:832</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Registration</h5>
+<span class='badge badge-success'>11.24.2023 3:07:11 pm</span>
+<span class='badge badge-danger'>11.24.2023 3:07:21 pm</span>
+<span class='badge badge-default'>00:00:09:832</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=27</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="28"><span class="badge log fail-bg mr-2">Fail</span>Registration scenario using data table</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_launch_chrome_browser()">
+                <span>Given User launch Chrome Browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_opens_url(java.lang.String)">
+                <span>And User opens URL "https://dsportalapp.herokuapp.com"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_click_on_get_started()">
+                <span>When User click on Get Started</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_click_on_sign_in()">
+                <span>When User click on Sign in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_click_on_register()">
+                <span>When User click on Register</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.RegistrationSD.user_opens_register_page()">
+                <span>Given User opens register page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.RegistrationSD.user_click_on_register_with_all_fields_empty()">
+                <span>When User click on Register with all fields empty</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.RegistrationSD.it_should_display_an_error_below_username_textbox(java.lang.String)">
+                <span>Then It should display an error "Please fill out this field." below Username textbox</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.RegistrationSD.user_enters_only_username(io.cucumber.datatable.DataTable)">
+                <span>When User enters only username</span>
+      <div><table class='markup-table table '><tr><td>Username</td><td>Password</td><td>Password confirmation</td></tr><tr><td>rainTree</td><td>[blank]</td><td>[blank]</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.RegistrationSD.user_click_on_register_button_with_password_empty()">
+                <span>And User click on Register button with password empty</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.RegistrationSD.it_should_display_an_error_below_password_textbox(java.lang.String)">
+                <span>Then It should display an error "Please fill out this field." below Password textbox</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.RegistrationSD.user_enters_username_and_password(io.cucumber.datatable.DataTable)">
+                <span>When User enters username and password</span>
+      <div><table class='markup-table table '><tr><td>Username</td><td>Password</td><td>Password confirmation</td></tr><tr><td>rainTree</td><td>pass@12word</td><td>[blank]</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.RegistrationSD.user_click_on_register_button_with_password_confirmation_empty()">
+                <span>And User click on Register  button with password confirmation empty</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.RegistrationSD.it_should_display_an_error_below_password_confirmation_textbox(java.lang.String)">
+                <span>Then It should display an error "Please fill out this field." below Password confirmation textbox</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.RegistrationSD.user_enters_invalid_password_confirmation(io.cucumber.datatable.DataTable)">
+                <span>When User enters invalid password confirmation</span>
+      <div><table class='markup-table table '><tr><td>Username</td><td>Password</td><td>Password confirmation</td></tr><tr><td>rainTree</td><td>pass@12word</td><td>pass@34word</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.RegistrationSD.user_click_on_register_with_invalid_password_confirmation()">
+                <span>And User click on Register with invalid password confirmation</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.RegistrationSD.it_should_display_an_error(java.lang.String)">
+                <span>Then It should display an error "password_mismatch:The two password fields didn’t match."</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.RegistrationSD.user_enters_password_with_all_numbers(io.cucumber.datatable.DataTable)">
+                <span>When User enters password with all numbers</span>
+      <div><table class='markup-table table '><tr><td>Username</td><td>Password</td><td>Password confirmation</td></tr><tr><td>rainTree</td><td>12345678</td><td>12345678</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.RegistrationSD.user_click_on_register_button_with_invalid_password()">
+                <span>And User click on Register button with invalid password</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.RegistrationSD.user_enters_valid_username_and_password(io.cucumber.datatable.DataTable)">
+                <span>When User enters valid username and password</span>
+      <div><table class='markup-table table '><tr><td>Username</td><td>Password</td><td>Password confirmation</td></tr><tr><td>WbcdTree34</td><td>pass@12word</td><td>pass@12word</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.RegistrationSD.user_click_register_button_with_valid_crediantials()">
+                <span>And User click Register button with valid crediantials</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepDefinition.RegistrationSD.user_should_be_redirected_to_the_home_page_with_the_message_username(java.lang.String,java.lang.String)">
+                <span>Then User should be redirected to the home page with the message "New Account Created. You are logged in as "<Username>""</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at stepDefinition.RegistrationSD.user_should_be_redirected_to_the_home_page_with_the_message_username(RegistrationSD.java:123)
+	at ✽.User should be redirected to the home page with the message "New Account Created. You are logged in as "<Username>""(file:///C:/Users/satya/eclipse-workspace/DSAlgoTest/src/test/resources/features/02Register.feature:38)
+</textarea>
+      
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="55"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Sign in to DS Algo Portal</p>
+            <p class="text-sm">
+              <span>3:07:21 pm</span> / <span>00:00:17:056</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Sign in to DS Algo Portal</h5>
+<span class='badge badge-success'>11.24.2023 3:07:21 pm</span>
+<span class='badge badge-danger'>11.24.2023 3:07:38 pm</span>
+<span class='badge badge-default'>00:00:17:056</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=55</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="56"><span class="badge log pass-bg mr-2">Pass</span>Sign in</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="57"><span class="badge log pass-bg mr-2">Pass</span>Sign in</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User launch Chrome Browser</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User opens URL "https://dsportalapp.herokuapp.com"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User click on Get Started</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User click on Sign in</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given User is in the Sign In Page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I want to login with username "" and password "" and I clicked Login Button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I verify the "Both Blank" in step</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User should redirected to the home page if "Both Blank" is success with the message "" "You are logged in"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User click Sign Out Button if "Both Blank" is success</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="71"><span class="badge log pass-bg mr-2">Pass</span>Sign in</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User launch Chrome Browser</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User opens URL "https://dsportalapp.herokuapp.com"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User click on Get Started</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User click on Sign in</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given User is in the Sign In Page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I want to login with username "user1" and password "" and I clicked Login Button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I verify the "Password Blank" in step</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User should redirected to the home page if "Password Blank" is success with the message "user1" "You are logged in"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User click Sign Out Button if "Password Blank" is success</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="85"><span class="badge log pass-bg mr-2">Pass</span>Sign in</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User launch Chrome Browser</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User opens URL "https://dsportalapp.herokuapp.com"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User click on Get Started</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User click on Sign in</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given User is in the Sign In Page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I want to login with username "user2" and password "abc" and I clicked Login Button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I verify the "Both Invalid" in step</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User should redirected to the home page if "Both Invalid" is success with the message "user2" "You are logged in"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User click Sign Out Button if "Both Invalid" is success</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="99"><span class="badge log pass-bg mr-2">Pass</span>Sign in</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User launch Chrome Browser</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User opens URL "https://dsportalapp.herokuapp.com"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User click on Get Started</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User click on Sign in</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given User is in the Sign In Page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I want to login with username "skywalkers" and password "abc" and I clicked Login Button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I verify the "Password Invalid" in step</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User should redirected to the home page if "Password Invalid" is success with the message "skywalkers" "You are logged in"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User click Sign Out Button if "Password Invalid" is success</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="113"><span class="badge log pass-bg mr-2">Pass</span>Sign in</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User launch Chrome Browser</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User opens URL "https://dsportalapp.herokuapp.com"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User click on Get Started</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User click on Sign in</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given User is in the Sign In Page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I want to login with username "skywalkers" and password "password150@" and I clicked Login Button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I verify the "success" in step</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User should redirected to the home page if "success" is success with the message "skywalkers" "You are logged in"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User click Sign Out Button if "success" is success</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="127"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Data Structure Introduction Module</p>
+            <p class="text-sm">
+              <span>3:07:38 pm</span> / <span>00:00:32:071</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Data Structure Introduction Module</h5>
+<span class='badge badge-success'>11.24.2023 3:07:38 pm</span>
+<span class='badge badge-danger'>11.24.2023 3:08:10 pm</span>
+<span class='badge badge-default'>00:00:32:071</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=127</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="128"><span class="badge log pass-bg mr-2">Pass</span>DS introduction</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_launch_chrome_browser()">
+                <span>Given User launch Chrome Browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_opens_url(java.lang.String)">
+                <span>And User opens URL "https://dsportalapp.herokuapp.com"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_click_on_get_started()">
+                <span>When User click on Get Started</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_click_on_sign_in()">
+                <span>And User click on Sign in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DS_IntroSD.user_is_in_sign_in_page()">
+                <span>Given User is in Sign in page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DS_IntroSD.user_enters_and(java.lang.String,java.lang.String)">
+                <span>And User enters "Username" and "Password"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DS_IntroSD.user_click_on_login()">
+                <span>And User click on login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DS_IntroSD.user_should_be_redirected_to_the_home_page()">
+                <span>Then User should be redirected to the home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DS_IntroSD.user_click_on_get_started_button_below_ds_introduction()">
+                <span>When User click on Get started button below DS introduction</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DS_IntroSD.user_should_land_in_ds_intro_page()">
+                <span>Then User should land in DS intro. page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DS_IntroSD.user_click_on_time_complexity_button()">
+                <span>When User click on Time Complexity button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DS_IntroSD.user_should_land_in_time_complexity_of_ds_intro()">
+                <span>Then User should land in Time Complexity of DS intro.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.page_title_should_be(java.lang.String)">
+                <span>And Page title should be "Time Complexity"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DS_IntroSD.user_click_on_practice_questions_button()">
+                <span>When User click on Practice Questions button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DS_IntroSD.user_should_be_redirected_to_practice_questions_of_ds_intro()">
+                <span>Then User should be redirected to Practice Questions of DS intro.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.page_title_should_be(java.lang.String)">
+                <span>And Page title should be "Practice Questions"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DS_IntroSD.user_should_navigate_to_back()">
+                <span>And User should navigate to back</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DS_IntroSD.user_click_on_try_here_button()">
+                <span>When User click on Try here button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DS_IntroSD.user_should_be_redirected_to_a_page_having_try_editor_with_a_run_button_to_test()">
+                <span>Then User should be redirected to a page having tryEditor with a Run button to test</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DS_IntroSD.user_enters_code_from_excel_and_run()">
+                <span>When User enters code from Excel and Run</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="153"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Linked List Module</p>
+            <p class="text-sm">
+              <span>3:08:10 pm</span> / <span>00:02:05:130</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Linked List Module</h5>
+<span class='badge badge-success'>11.24.2023 3:08:10 pm</span>
+<span class='badge badge-danger'>11.24.2023 3:10:15 pm</span>
+<span class='badge badge-default'>00:02:05:130</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=153</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="154"><span class="badge log pass-bg mr-2">Pass</span>Linked List Introduction</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_launch_chrome_browser()">
+                <span>Given User launch Chrome Browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_opens_url(java.lang.String)">
+                <span>And User opens URL "https://dsportalapp.herokuapp.com"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_click_on_get_started()">
+                <span>When User click on Get Started</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DS_IntroSD.user_should_be_redirected_to_the_home_page()">
+                <span>Then User should be redirected to the home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LinkdListSD.user_click_on_get_started_button_below_linked_list()">
+                <span>When User click on Get Started button below Linked List</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LinkdListSD.user_should_be_redirected_to_the_linked_list_page()">
+                <span>Then User should be redirected to the linked list page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LinkdListSD.user_click_on_introduction()">
+                <span>When User click on Introduction</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LinkdListSD.user_should_be_redirected_to_the_introduction_page_of_linked_list()">
+                <span>Then User should be redirected to the introduction page of linked list</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LinkdListSD.user_will_click_on_try_here()">
+                <span>When User  will click on Try here</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LinkdListSD.user_will_land_in_a_try_editor_page()">
+                <span>Then User will land in a tryEditor page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LinkdListSD.user_enters_code_from_excel_and_run_the_code()">
+                <span>When User enters code from Excel and Run the code</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LinkdListSD.user_navigate_to_back()">
+                <span>Then User navigate to back</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="171"><span class="badge log pass-bg mr-2">Pass</span>Creating Linked List</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_launch_chrome_browser()">
+                <span>Given User launch Chrome Browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_opens_url(java.lang.String)">
+                <span>And User opens URL "https://dsportalapp.herokuapp.com"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_click_on_get_started()">
+                <span>When User click on Get Started</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DS_IntroSD.user_should_be_redirected_to_the_home_page()">
+                <span>Then User should be redirected to the home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LinkdListSD.user_click_on_get_started_button_below_linked_list()">
+                <span>When User click on Get Started button below Linked List</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LinkdListSD.user_should_be_redirected_to_the_linked_list_page()">
+                <span>Then User should be redirected to the linked list page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LinkdListSD.user_click_on_creating_linked_list()">
+                <span>When User click on Creating Linked List</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LinkdListSD.user_should_be_redirected_to_the_creating_linked_list_page()">
+                <span>Then User should be redirected to the Creating Linked List page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LinkdListSD.user_should_click_on_try_here_button_on_the_creating_linked_list_page()">
+                <span>When User should  click on Try here button on the creating Linked List page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LinkdListSD.user_will_land_in_a_try_editor_page()">
+                <span>Then User will land in a tryEditor page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LinkdListSD.user_enters_code_from_excel_and_run_the_code()">
+                <span>When User enters code from Excel and Run the code</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LinkdListSD.user_navigate_to_back()">
+                <span>Then User navigate to back</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="188"><span class="badge log pass-bg mr-2">Pass</span>Types of Linked List</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_launch_chrome_browser()">
+                <span>Given User launch Chrome Browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_opens_url(java.lang.String)">
+                <span>And User opens URL "https://dsportalapp.herokuapp.com"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_click_on_get_started()">
+                <span>When User click on Get Started</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DS_IntroSD.user_should_be_redirected_to_the_home_page()">
+                <span>Then User should be redirected to the home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LinkdListSD.user_click_on_get_started_button_below_linked_list()">
+                <span>When User click on Get Started button below Linked List</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LinkdListSD.user_should_be_redirected_to_the_linked_list_page()">
+                <span>Then User should be redirected to the linked list page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LinkdListSD.user_click_on_types_of_linked_list()">
+                <span>When User click on Types of Linked List</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LinkdListSD.user_should_be_redirected_to_the_types_of_linked_list_page()">
+                <span>Then User should be redirected to the Types Of Linked List page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LinkdListSD.user_should_click_on_try_here_button_on_the_types_of_linked_list_page()">
+                <span>When User should  click on Try here button on the Types of Linked List page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LinkdListSD.user_will_land_in_a_try_editor_page()">
+                <span>Then User will land in a tryEditor page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LinkdListSD.user_enters_code_from_excel_and_run_the_code()">
+                <span>When User enters code from Excel and Run the code</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LinkdListSD.user_navigate_to_back()">
+                <span>Then User navigate to back</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="205"><span class="badge log pass-bg mr-2">Pass</span>Implement Linked List in Python</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_launch_chrome_browser()">
+                <span>Given User launch Chrome Browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_opens_url(java.lang.String)">
+                <span>And User opens URL "https://dsportalapp.herokuapp.com"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_click_on_get_started()">
+                <span>When User click on Get Started</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DS_IntroSD.user_should_be_redirected_to_the_home_page()">
+                <span>Then User should be redirected to the home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LinkdListSD.user_click_on_get_started_button_below_linked_list()">
+                <span>When User click on Get Started button below Linked List</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LinkdListSD.user_should_be_redirected_to_the_linked_list_page()">
+                <span>Then User should be redirected to the linked list page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LinkdListSD.user_click_on_implement_linked_list_in_python()">
+                <span>When User click on Implement Linked List in Python</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LinkdListSD.user_should_be_redirected_to_the_implement_linked_list_in_python_page()">
+                <span>Then User should be redirected to the Implement Linked List in Python page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LinkdListSD.user_should_click_on_try_here_button_on_the_implement_linked_list_page()">
+                <span>When User should  click on Try here button on the Implement Linked List page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LinkdListSD.user_will_land_in_a_try_editor_page()">
+                <span>Then User will land in a tryEditor page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LinkdListSD.user_enters_code_from_excel_and_run_the_code()">
+                <span>When User enters code from Excel and Run the code</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LinkdListSD.user_navigate_to_back()">
+                <span>Then User navigate to back</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="222"><span class="badge log pass-bg mr-2">Pass</span>Traversal</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_launch_chrome_browser()">
+                <span>Given User launch Chrome Browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_opens_url(java.lang.String)">
+                <span>And User opens URL "https://dsportalapp.herokuapp.com"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_click_on_get_started()">
+                <span>When User click on Get Started</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DS_IntroSD.user_should_be_redirected_to_the_home_page()">
+                <span>Then User should be redirected to the home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LinkdListSD.user_click_on_get_started_button_below_linked_list()">
+                <span>When User click on Get Started button below Linked List</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LinkdListSD.user_should_be_redirected_to_the_linked_list_page()">
+                <span>Then User should be redirected to the linked list page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LinkdListSD.user_click_on_traversal()">
+                <span>When User click on Traversal</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LinkdListSD.user_should_be_redirected_to_the_traversal_page()">
+                <span>Then User should be redirected to the Traversal page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LinkdListSD.user_should_click_on_try_here_button_on_traversal_page()">
+                <span>When User should  click on Try here button on Traversal page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LinkdListSD.user_will_land_in_a_try_editor_page()">
+                <span>Then User will land in a tryEditor page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LinkdListSD.user_enters_code_from_excel_and_run_the_code()">
+                <span>When User enters code from Excel and Run the code</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LinkdListSD.user_navigate_to_back()">
+                <span>Then User navigate to back</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="239"><span class="badge log pass-bg mr-2">Pass</span>Insertion</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_launch_chrome_browser()">
+                <span>Given User launch Chrome Browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_opens_url(java.lang.String)">
+                <span>And User opens URL "https://dsportalapp.herokuapp.com"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_click_on_get_started()">
+                <span>When User click on Get Started</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DS_IntroSD.user_should_be_redirected_to_the_home_page()">
+                <span>Then User should be redirected to the home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LinkdListSD.user_click_on_get_started_button_below_linked_list()">
+                <span>When User click on Get Started button below Linked List</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LinkdListSD.user_should_be_redirected_to_the_linked_list_page()">
+                <span>Then User should be redirected to the linked list page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LinkdListSD.user_click_on_insertion()">
+                <span>When User click on Insertion</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LinkdListSD.user_should_be_redirected_to_the_insertion_page()">
+                <span>Then User should be redirected to the Insertion page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LinkdListSD.user_should_click_on_try_here_button_on_the_insertion_page()">
+                <span>When User should  click on Try here button on the Insertion page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LinkdListSD.user_will_land_in_a_try_editor_page()">
+                <span>Then User will land in a tryEditor page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LinkdListSD.user_enters_code_from_excel_and_run_the_code()">
+                <span>When User enters code from Excel and Run the code</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LinkdListSD.user_navigate_to_back()">
+                <span>Then User navigate to back</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="256"><span class="badge log pass-bg mr-2">Pass</span>Deletion</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_launch_chrome_browser()">
+                <span>Given User launch Chrome Browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_opens_url(java.lang.String)">
+                <span>And User opens URL "https://dsportalapp.herokuapp.com"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_click_on_get_started()">
+                <span>When User click on Get Started</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DS_IntroSD.user_should_be_redirected_to_the_home_page()">
+                <span>Then User should be redirected to the home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LinkdListSD.user_click_on_get_started_button_below_linked_list()">
+                <span>When User click on Get Started button below Linked List</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LinkdListSD.user_should_be_redirected_to_the_linked_list_page()">
+                <span>Then User should be redirected to the linked list page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LinkdListSD.user_click_on_deletion()">
+                <span>When User click on Deletion</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LinkdListSD.user_should_be_redirected_to_the_deletion_page()">
+                <span>Then User should be redirected to the Deletion page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LinkdListSD.user_should_click_on_try_here_button_on_the_deletion_page()">
+                <span>When User should  click on Try here button on the Deletion page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LinkdListSD.user_will_land_in_a_try_editor_page()">
+                <span>Then User will land in a tryEditor page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LinkdListSD.user_enters_code_from_excel_and_run_the_code()">
+                <span>When User enters code from Excel and Run the code</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LinkdListSD.user_navigate_to_back()">
+                <span>Then User navigate to back</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="273"><span class="badge log pass-bg mr-2">Pass</span>Practice Questions</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_launch_chrome_browser()">
+                <span>Given User launch Chrome Browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_opens_url(java.lang.String)">
+                <span>And User opens URL "https://dsportalapp.herokuapp.com"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_click_on_get_started()">
+                <span>When User click on Get Started</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DS_IntroSD.user_should_be_redirected_to_the_home_page()">
+                <span>Then User should be redirected to the home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LinkdListSD.user_click_on_get_started_button_below_linked_list()">
+                <span>When User click on Get Started button below Linked List</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LinkdListSD.user_should_be_redirected_to_the_linked_list_page()">
+                <span>Then User should be redirected to the linked list page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LinkdListSD.user_click_on_introduction()">
+                <span>When User click on Introduction</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LinkdListSD.user_click_on_practice_questions()">
+                <span>When User click on Practice Questions</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LinkdListSD.user_should_be_redirected_to_the_practice_questions_page()">
+                <span>Then User should be redirected to the Practice Questions page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LinkdListSD.title_should_be(java.lang.String)">
+                <span>And Title should be "Practice Questions"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.LinkdListSD.user_navigate_to_back()">
+                <span>And User navigate to back</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="289"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Stack Module</p>
+            <p class="text-sm">
+              <span>3:10:15 pm</span> / <span>00:00:22:319</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Stack Module</h5>
+<span class='badge badge-success'>11.24.2023 3:10:15 pm</span>
+<span class='badge badge-danger'>11.24.2023 3:10:37 pm</span>
+<span class='badge badge-default'>00:00:22:319</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=289</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="290"><span class="badge log pass-bg mr-2">Pass</span>Operations in Stack</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_launch_chrome_browser()">
+                <span>Given User launch Chrome Browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_opens_url(java.lang.String)">
+                <span>And User opens URL "https://dsportalapp.herokuapp.com"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_click_on_get_started()">
+                <span>When User click on Get Started</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StackSD.user_should_be_redirected_to_the_homepage()">
+                <span>Then User should be redirected to the homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StackSD.user_clicks_on_get_started_button_in_the_stack_pane_after_logged_in()">
+                <span>When User clicks on Get Started button in the Stack pane after Logged in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StackSD.the_user_should_be_directed_to_page(java.lang.String)">
+                <span>Then The user should be directed to "Stack" Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StackSD.the_user_clicks_link(java.lang.String)">
+                <span>When The user clicks "Operations in Stack" link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StackSD.the_user_should_be_directed_to_page(java.lang.String)">
+                <span>Then The user should be directed to "Operations in Stack" Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StackSD.the_user_is_in_the_operations_in_stack_page_after_logged_in()">
+                <span>Given The user is in the Operations in Stack page after logged in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StackSD.the_user_clicks_try_here_button()">
+                <span>When The user clicks Try Here button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StackSD.the_user_should_be_redirected_to_try_editor_page()">
+                <span>Then The user should be redirected to tryEditor page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StackSD.user_gives_inputs_from_excel_and_clicks_run_button()">
+                <span>When User gives inputs from Excel and clicks Run Button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StackSD.user_gets_output_or_alert_message_based_on_input()">
+                <span>Then User gets output or alert message based on input</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StackSD.user_navigates_back_to_page(java.lang.String)">
+                <span>And User navigates back to "Operations in Stack" page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StackSD.the_user_clicks_practice_question_button()">
+                <span>When The user clicks Practice Questions button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StackSD.the_user_should_be_in_the_page(java.lang.String)">
+                <span>Then The user should be in the "Practice" page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="311"><span class="badge log pass-bg mr-2">Pass</span>Implementation</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_launch_chrome_browser()">
+                <span>Given User launch Chrome Browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_opens_url(java.lang.String)">
+                <span>And User opens URL "https://dsportalapp.herokuapp.com"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_click_on_get_started()">
+                <span>When User click on Get Started</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StackSD.user_should_be_redirected_to_the_homepage()">
+                <span>Then User should be redirected to the homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StackSD.user_clicks_on_get_started_button_in_the_stack_pane_after_logged_in()">
+                <span>When User clicks on Get Started button in the Stack pane after Logged in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StackSD.the_user_should_be_directed_to_page(java.lang.String)">
+                <span>Then The user should be directed to "Stack" Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StackSD.the_user_clicks_link(java.lang.String)">
+                <span>When The user clicks "Implementation" link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StackSD.the_user_should_be_directed_to_page(java.lang.String)">
+                <span>Then The user should be directed to "Implementation" Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StackSD.the_user_is_in_the_implementation_page()">
+                <span>Given The user is in the Implementation page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StackSD.the_user_clicks_try_here_button()">
+                <span>When The user clicks Try Here button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StackSD.the_user_should_be_redirected_to_try_editor_page()">
+                <span>Then The user should be redirected to tryEditor page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StackSD.user_gives_inputs_from_excel_and_clicks_run_button()">
+                <span>When User gives inputs from Excel and clicks Run Button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StackSD.user_gets_output_or_alert_message_based_on_input()">
+                <span>Then User gets output or alert message based on input</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StackSD.user_navigates_back_to_page(java.lang.String)">
+                <span>And User navigates back to "Implementation" page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StackSD.the_user_clicks_practice_question_button()">
+                <span>When The user clicks Practice Questions button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StackSD.the_user_should_be_in_the_page(java.lang.String)">
+                <span>Then The user should be in the "Practice" page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="332"><span class="badge log pass-bg mr-2">Pass</span>Applications</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_launch_chrome_browser()">
+                <span>Given User launch Chrome Browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_opens_url(java.lang.String)">
+                <span>And User opens URL "https://dsportalapp.herokuapp.com"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_click_on_get_started()">
+                <span>When User click on Get Started</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StackSD.user_should_be_redirected_to_the_homepage()">
+                <span>Then User should be redirected to the homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StackSD.user_clicks_on_get_started_button_in_the_stack_pane_after_logged_in()">
+                <span>When User clicks on Get Started button in the Stack pane after Logged in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StackSD.the_user_should_be_directed_to_page(java.lang.String)">
+                <span>Then The user should be directed to "Stack" Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StackSD.the_user_clicks_link(java.lang.String)">
+                <span>When The user clicks "Applications" link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StackSD.the_user_should_be_directed_to_page(java.lang.String)">
+                <span>Then The user should be directed to "Applications" Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StackSD.the_user_is_in_the_applications_page_after_logged_in()">
+                <span>Given The user is in the Applications page after logged in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StackSD.the_user_clicks_try_here_button()">
+                <span>When The user clicks Try Here button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StackSD.the_user_should_be_redirected_to_try_editor_page()">
+                <span>Then The user should be redirected to tryEditor page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StackSD.user_gives_inputs_from_excel_and_clicks_run_button()">
+                <span>When User gives inputs from Excel and clicks Run Button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StackSD.user_gets_output_or_alert_message_based_on_input()">
+                <span>Then User gets output or alert message based on input</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StackSD.user_navigates_back_to_page(java.lang.String)">
+                <span>And User navigates back to "Applications" page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StackSD.the_user_clicks_practice_question_button()">
+                <span>When The user clicks Practice Questions button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StackSD.the_user_should_be_in_the_page(java.lang.String)">
+                <span>Then The user should be in the "Practice" page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="353"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Queue Module</p>
+            <p class="text-sm">
+              <span>3:10:37 pm</span> / <span>00:00:28:396</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Queue Module</h5>
+<span class='badge badge-success'>11.24.2023 3:10:37 pm</span>
+<span class='badge badge-danger'>11.24.2023 3:11:06 pm</span>
+<span class='badge badge-default'>00:00:28:396</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=353</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="354"><span class="badge log pass-bg mr-2">Pass</span>Implementation of Queue in Python</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_launch_chrome_browser()">
+                <span>Given User launch Chrome Browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_opens_url(java.lang.String)">
+                <span>And User opens URL "https://dsportalapp.herokuapp.com"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_click_on_get_started()">
+                <span>When User click on Get Started</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StackSD.user_should_be_redirected_to_the_homepage()">
+                <span>Then User should be redirected to the homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.QueueSD.user_clicks_on_get_started_button_in_the_queue_pane_after_logged_in()">
+                <span>When User clicks on Get Started button in the Queue pane after Logged in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StackSD.the_user_should_be_directed_to_page(java.lang.String)">
+                <span>Then The user should be directed to "Queue" Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.QueueSD.the_user_clicks_on_link(java.lang.String)">
+                <span>When The user clicks on "Implementation of Queue in Python" link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StackSD.the_user_should_be_directed_to_page(java.lang.String)">
+                <span>Then The user should be directed to "Implementation of Queue in Python" Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.QueueSD.the_user_is_in_the_implementation_of_queue_in_python_page_after_logged_in()">
+                <span>Given The user is in the Implementation of Queue in Python page after logged in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.QueueSD.the_user_clicks_on_try_here_button()">
+                <span>When The user clicks on Try Here button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StackSD.the_user_should_be_redirected_to_try_editor_page()">
+                <span>Then The user should be redirected to tryEditor page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.QueueSD.user_gives_inputs_from_excel_file_and_clicks_run_button()">
+                <span>When User gives inputs from Excel file and clicks Run Button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StackSD.user_gets_output_or_alert_message_based_on_input()">
+                <span>Then User gets output or alert message based on input</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.QueueSD.user_go_back_to_page(java.lang.String)">
+                <span>And User go back to "Implementation of Queue in Python" page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.QueueSD.the_user_clicks_practice_questions_link()">
+                <span>When The user clicks Practice Questions link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.QueueSD.the_user_should_be_in_the_practice_page()">
+                <span>Then The user should be in the Practice page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="375"><span class="badge log pass-bg mr-2">Pass</span>Implementation using collections.deque</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_launch_chrome_browser()">
+                <span>Given User launch Chrome Browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_opens_url(java.lang.String)">
+                <span>And User opens URL "https://dsportalapp.herokuapp.com"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_click_on_get_started()">
+                <span>When User click on Get Started</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StackSD.user_should_be_redirected_to_the_homepage()">
+                <span>Then User should be redirected to the homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.QueueSD.user_clicks_on_get_started_button_in_the_queue_pane_after_logged_in()">
+                <span>When User clicks on Get Started button in the Queue pane after Logged in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StackSD.the_user_should_be_directed_to_page(java.lang.String)">
+                <span>Then The user should be directed to "Queue" Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.QueueSD.the_user_clicks_on_link(java.lang.String)">
+                <span>When The user clicks on "Implementation using collections.deque" link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StackSD.the_user_should_be_directed_to_page(java.lang.String)">
+                <span>Then The user should be directed to "Implementation using collections.deque" Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.QueueSD.the_user_is_in_the_implementation_using_collections_deque_page()">
+                <span>Given The user is in the Implementation using collections.deque page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.QueueSD.the_user_clicks_on_try_here_button()">
+                <span>When The user clicks on Try Here button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StackSD.the_user_should_be_redirected_to_try_editor_page()">
+                <span>Then The user should be redirected to tryEditor page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.QueueSD.user_gives_inputs_from_excel_file_and_clicks_run_button()">
+                <span>When User gives inputs from Excel file and clicks Run Button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StackSD.user_gets_output_or_alert_message_based_on_input()">
+                <span>Then User gets output or alert message based on input</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.QueueSD.user_go_back_to_page(java.lang.String)">
+                <span>And User go back to "Implementation using collections.deque" page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.QueueSD.the_user_clicks_practice_questions_link()">
+                <span>When The user clicks Practice Questions link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.QueueSD.the_user_should_be_in_the_practice_page()">
+                <span>Then The user should be in the Practice page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="396"><span class="badge log pass-bg mr-2">Pass</span>Implementation using array</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_launch_chrome_browser()">
+                <span>Given User launch Chrome Browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_opens_url(java.lang.String)">
+                <span>And User opens URL "https://dsportalapp.herokuapp.com"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_click_on_get_started()">
+                <span>When User click on Get Started</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StackSD.user_should_be_redirected_to_the_homepage()">
+                <span>Then User should be redirected to the homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.QueueSD.user_clicks_on_get_started_button_in_the_queue_pane_after_logged_in()">
+                <span>When User clicks on Get Started button in the Queue pane after Logged in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StackSD.the_user_should_be_directed_to_page(java.lang.String)">
+                <span>Then The user should be directed to "Queue" Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.QueueSD.the_user_clicks_on_link(java.lang.String)">
+                <span>When The user clicks on "Implementation using array" link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StackSD.the_user_should_be_directed_to_page(java.lang.String)">
+                <span>Then The user should be directed to "Implementation using array" Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.QueueSD.the_user_is_in_the_implementation_using_array_page_after_logged_in()">
+                <span>Given The user is in the Implementation using array page after logged in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.QueueSD.the_user_clicks_on_try_here_button()">
+                <span>When The user clicks on Try Here button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StackSD.the_user_should_be_redirected_to_try_editor_page()">
+                <span>Then The user should be redirected to tryEditor page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.QueueSD.user_gives_inputs_from_excel_file_and_clicks_run_button()">
+                <span>When User gives inputs from Excel file and clicks Run Button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StackSD.user_gets_output_or_alert_message_based_on_input()">
+                <span>Then User gets output or alert message based on input</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.QueueSD.user_go_back_to_page(java.lang.String)">
+                <span>And User go back to "Implementation using array" page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.QueueSD.the_user_clicks_practice_questions_link()">
+                <span>When The user clicks Practice Questions link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.QueueSD.the_user_should_be_in_the_practice_page()">
+                <span>Then The user should be in the Practice page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="417"><span class="badge log pass-bg mr-2">Pass</span>Queue Operations</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_launch_chrome_browser()">
+                <span>Given User launch Chrome Browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_opens_url(java.lang.String)">
+                <span>And User opens URL "https://dsportalapp.herokuapp.com"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_click_on_get_started()">
+                <span>When User click on Get Started</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StackSD.user_should_be_redirected_to_the_homepage()">
+                <span>Then User should be redirected to the homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.QueueSD.user_clicks_on_get_started_button_in_the_queue_pane_after_logged_in()">
+                <span>When User clicks on Get Started button in the Queue pane after Logged in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StackSD.the_user_should_be_directed_to_page(java.lang.String)">
+                <span>Then The user should be directed to "Queue" Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.QueueSD.the_user_clicks_on_link(java.lang.String)">
+                <span>When The user clicks on "Queue Operations" link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StackSD.the_user_should_be_directed_to_page(java.lang.String)">
+                <span>Then The user should be directed to "Queue Operations" Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.QueueSD.the_user_is_in_the_queue_operations_page_after_logged_in()">
+                <span>Given The user is in the Queue Operations page after logged in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.QueueSD.the_user_clicks_on_try_here_button()">
+                <span>When The user clicks on Try Here button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StackSD.the_user_should_be_redirected_to_try_editor_page()">
+                <span>Then The user should be redirected to tryEditor page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.QueueSD.user_gives_inputs_from_excel_file_and_clicks_run_button()">
+                <span>When User gives inputs from Excel file and clicks Run Button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.StackSD.user_gets_output_or_alert_message_based_on_input()">
+                <span>Then User gets output or alert message based on input</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.QueueSD.user_go_back_to_page(java.lang.String)">
+                <span>And User go back to "Queue Operations" page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.QueueSD.the_user_clicks_practice_questions_link()">
+                <span>When The user clicks Practice Questions link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.QueueSD.the_user_should_be_in_the_practice_page()">
+                <span>Then The user should be in the Practice page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="438"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Array in Data Structure Module</p>
+            <p class="text-sm">
+              <span>3:11:06 pm</span> / <span>00:01:02:610</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Array in Data Structure Module</h5>
+<span class='badge badge-success'>11.24.2023 3:11:06 pm</span>
+<span class='badge badge-danger'>11.24.2023 3:12:08 pm</span>
+<span class='badge badge-default'>00:01:02:610</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=438</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="439"><span class="badge log pass-bg mr-2">Pass</span>Arrays in Python</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_launch_chrome_browser()">
+                <span>Given User launch Chrome Browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_opens_url(java.lang.String)">
+                <span>And User opens URL "https://dsportalapp.herokuapp.com"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_click_on_get_started()">
+                <span>When User click on Get Started</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_is_navigated_to_the_Home_page()">
+                <span>Then User is navigated to the Home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_clicks_on_get_started_button_of_array_data_structure()">
+                <span>When User clicks on Get Started button of Array Data Structure</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_is_navigated_to_the_array_page()">
+                <span>Then User is navigated to the Array page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.the_page_title_is(java.lang.String)">
+                <span>And The page title is "Array"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_clicks_on_arrays_in_python_button()">
+                <span>When User clicks on Arrays in Python button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.the_user_is_navigated_to_the_page_where_the_header_is(java.lang.String)">
+                <span>Then The user is navigated to the page where the header is "Arrays in Python"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_click_on_try_here_buttton()">
+                <span>And User click on Try here buttton</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_is_taken_to_a_try_editor_page()">
+                <span>Then User is taken to a Try Editor page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_enters_code_from_excel_and_clicks_Run()">
+                <span>And User enters code from excel and clicks Run</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_navigates_back_to_the_previous_page()">
+                <span>And User navigates back to the previous page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="457"><span class="badge log pass-bg mr-2">Pass</span>Arrays Using List</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_launch_chrome_browser()">
+                <span>Given User launch Chrome Browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_opens_url(java.lang.String)">
+                <span>And User opens URL "https://dsportalapp.herokuapp.com"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_click_on_get_started()">
+                <span>When User click on Get Started</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_is_navigated_to_the_Home_page()">
+                <span>Then User is navigated to the Home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_clicks_on_get_started_button_of_array_data_structure()">
+                <span>When User clicks on Get Started button of Array Data Structure</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_is_navigated_to_the_array_page()">
+                <span>Then User is navigated to the Array page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.the_page_title_is(java.lang.String)">
+                <span>And The page title is "Array"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_clicks_on_the_arrays_using_list_option()">
+                <span>When User clicks on the Arrays Using List option</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.the_user_is_navigated_to_the_page_where_the_header_is(java.lang.String)">
+                <span>Then The user is navigated to the page where the header is "Arrays Using List"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_click_on_try_here_buttton()">
+                <span>And User click on Try here buttton</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_is_taken_to_a_try_editor_page()">
+                <span>Then User is taken to a Try Editor page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_enters_code_from_excel_and_clicks_Run()">
+                <span>And User enters code from excel and clicks Run</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_navigates_back_to_the_previous_page()">
+                <span>And User navigates back to the previous page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="475"><span class="badge log pass-bg mr-2">Pass</span>Basic Operations in Lists</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_launch_chrome_browser()">
+                <span>Given User launch Chrome Browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_opens_url(java.lang.String)">
+                <span>And User opens URL "https://dsportalapp.herokuapp.com"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_click_on_get_started()">
+                <span>When User click on Get Started</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_is_navigated_to_the_Home_page()">
+                <span>Then User is navigated to the Home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_clicks_on_get_started_button_of_array_data_structure()">
+                <span>When User clicks on Get Started button of Array Data Structure</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_is_navigated_to_the_array_page()">
+                <span>Then User is navigated to the Array page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.the_page_title_is(java.lang.String)">
+                <span>And The page title is "Array"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_clicks_on_the_basic_operations_in_lists_option()">
+                <span>When User clicks on the Basic Operations in Lists option</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.the_user_is_navigated_to_the_page_where_the_header_is(java.lang.String)">
+                <span>Then The user is navigated to the page where the header is "Basic Operations in Lists"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_click_on_try_here_buttton()">
+                <span>And User click on Try here buttton</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_is_taken_to_a_try_editor_page()">
+                <span>Then User is taken to a Try Editor page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_enters_code_from_excel_and_clicks_Run()">
+                <span>And User enters code from excel and clicks Run</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_navigates_back_to_the_previous_page()">
+                <span>And User navigates back to the previous page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="493"><span class="badge log pass-bg mr-2">Pass</span>Applications in Array</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_launch_chrome_browser()">
+                <span>Given User launch Chrome Browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_opens_url(java.lang.String)">
+                <span>And User opens URL "https://dsportalapp.herokuapp.com"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_click_on_get_started()">
+                <span>When User click on Get Started</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_is_navigated_to_the_Home_page()">
+                <span>Then User is navigated to the Home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_clicks_on_get_started_button_of_array_data_structure()">
+                <span>When User clicks on Get Started button of Array Data Structure</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_is_navigated_to_the_array_page()">
+                <span>Then User is navigated to the Array page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.the_page_title_is(java.lang.String)">
+                <span>And The page title is "Array"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_clicks_on_the_applications_of_array_option()">
+                <span>When User clicks on the Applications of Array option</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.the_user_is_navigated_to_the_page_where_the_header_is(java.lang.String)">
+                <span>Then The user is navigated to the page where the header is "Applications of Array"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_click_on_try_here_buttton()">
+                <span>And User click on Try here buttton</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_is_taken_to_a_try_editor_page()">
+                <span>Then User is taken to a Try Editor page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_enters_code_from_excel_and_clicks_Run()">
+                <span>And User enters code from excel and clicks Run</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_navigates_back_to_the_previous_page()">
+                <span>And User navigates back to the previous page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="511"><span class="badge log pass-bg mr-2">Pass</span>Search the Array Question</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_launch_chrome_browser()">
+                <span>Given User launch Chrome Browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_opens_url(java.lang.String)">
+                <span>And User opens URL "https://dsportalapp.herokuapp.com"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_click_on_get_started()">
+                <span>When User click on Get Started</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_is_navigated_to_the_Home_page()">
+                <span>Then User is navigated to the Home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_clicks_on_get_started_button_of_array_data_structure()">
+                <span>When User clicks on Get Started button of Array Data Structure</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_is_navigated_to_the_array_page()">
+                <span>Then User is navigated to the Array page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.the_page_title_is(java.lang.String)">
+                <span>And The page title is "Array"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_clicks_on_arrays_in_python_button()">
+                <span>When User clicks on Arrays in Python button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_clicks_on_the_practice_questions_option()">
+                <span>Then User clicks on the Practice Questions option</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.the_user_is_navigated_to_the_page_having_four_questions()">
+                <span>And The user is navigated to the page having four questions</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.the_user_clicks_on_the_search_the_array_option()">
+                <span>When The user clicks on the Search the Array option</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.the_user_is_navigated_to_the_question_page()">
+                <span>Then The user is navigated to the Question page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_clicks_run()">
+                <span>When User clicks Run</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.the_result_is_displayed()">
+                <span>Then The result is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_clicks_submit()">
+                <span>When User clicks Submit</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.the_result_displayed_is(java.lang.String)">
+                <span>Then The result displayed is "Error occurred during submission"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_navigates_back_to_the_previous_page()">
+                <span>And User navigates back to the previous page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="533"><span class="badge log pass-bg mr-2">Pass</span>Max Consecutive Ones Question</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_launch_chrome_browser()">
+                <span>Given User launch Chrome Browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_opens_url(java.lang.String)">
+                <span>And User opens URL "https://dsportalapp.herokuapp.com"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_click_on_get_started()">
+                <span>When User click on Get Started</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_is_navigated_to_the_Home_page()">
+                <span>Then User is navigated to the Home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_clicks_on_get_started_button_of_array_data_structure()">
+                <span>When User clicks on Get Started button of Array Data Structure</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_is_navigated_to_the_array_page()">
+                <span>Then User is navigated to the Array page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.the_page_title_is(java.lang.String)">
+                <span>And The page title is "Array"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_clicks_on_arrays_in_python_button()">
+                <span>When User clicks on Arrays in Python button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_clicks_on_the_practice_questions_option()">
+                <span>Then User clicks on the Practice Questions option</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.the_user_is_navigated_to_the_page_having_four_questions()">
+                <span>And The user is navigated to the page having four questions</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_clicks_on_the_max_consecutive_ones_option()">
+                <span>When User clicks on the Max Consecutive Ones option</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.the_user_is_navigated_to_the_question_page()">
+                <span>Then The user is navigated to the Question page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_clicks_run()">
+                <span>When User clicks Run</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.the_result_is_displayed()">
+                <span>Then The result is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_clicks_submit()">
+                <span>When User clicks Submit</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.the_result_displayed_is(java.lang.String)">
+                <span>Then The result displayed is "Error occurred during submission"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_navigates_back_to_the_previous_page()">
+                <span>And User navigates back to the previous page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="555"><span class="badge log pass-bg mr-2">Pass</span>Find Numbers with Even Number of Digits Question</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_launch_chrome_browser()">
+                <span>Given User launch Chrome Browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_opens_url(java.lang.String)">
+                <span>And User opens URL "https://dsportalapp.herokuapp.com"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_click_on_get_started()">
+                <span>When User click on Get Started</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_is_navigated_to_the_Home_page()">
+                <span>Then User is navigated to the Home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_clicks_on_get_started_button_of_array_data_structure()">
+                <span>When User clicks on Get Started button of Array Data Structure</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_is_navigated_to_the_array_page()">
+                <span>Then User is navigated to the Array page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.the_page_title_is(java.lang.String)">
+                <span>And The page title is "Array"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_clicks_on_arrays_in_python_button()">
+                <span>When User clicks on Arrays in Python button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_clicks_on_the_practice_questions_option()">
+                <span>Then User clicks on the Practice Questions option</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.the_user_is_navigated_to_the_page_having_four_questions()">
+                <span>And The user is navigated to the page having four questions</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_clicks_on_the_even_number_of_digits_option()">
+                <span>When User clicks on the Even Number of Digits option</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.the_user_is_navigated_to_the_question_page()">
+                <span>Then The user is navigated to the Question page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_clicks_run()">
+                <span>When User clicks Run</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.the_result_is_displayed()">
+                <span>Then The result is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_clicks_submit()">
+                <span>When User clicks Submit</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.the_result_displayed_is(java.lang.String)">
+                <span>Then The result displayed is "Error occurred during submission"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_navigates_back_to_the_previous_page()">
+                <span>And User navigates back to the previous page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="577"><span class="badge log pass-bg mr-2">Pass</span>Squares of a Sorted Array Question</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_launch_chrome_browser()">
+                <span>Given User launch Chrome Browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_opens_url(java.lang.String)">
+                <span>And User opens URL "https://dsportalapp.herokuapp.com"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DsAlgoPortalHomeSD.user_click_on_get_started()">
+                <span>When User click on Get Started</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_is_navigated_to_the_Home_page()">
+                <span>Then User is navigated to the Home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_clicks_on_get_started_button_of_array_data_structure()">
+                <span>When User clicks on Get Started button of Array Data Structure</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_is_navigated_to_the_array_page()">
+                <span>Then User is navigated to the Array page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.the_page_title_is(java.lang.String)">
+                <span>And The page title is "Array"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_clicks_on_arrays_in_python_button()">
+                <span>When User clicks on Arrays in Python button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_clicks_on_the_practice_questions_option()">
+                <span>Then User clicks on the Practice Questions option</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.the_user_is_navigated_to_the_page_having_four_questions()">
+                <span>And The user is navigated to the page having four questions</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_clicks_on_the_squares_of_a_sorted_array_option()">
+                <span>When User clicks on the Squares of a Sorted Array option</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.the_user_is_navigated_to_the_question_page()">
+                <span>Then The user is navigated to the Question page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_clicks_run()">
+                <span>When User clicks Run</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.the_result_is_displayed()">
+                <span>Then The result is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_clicks_submit()">
+                <span>When User clicks Submit</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.the_result_displayed_is(java.lang.String)">
+                <span>Then The result displayed is " No tests were collected"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.ArraySD.user_navigates_back_to_the_previous_page()">
+                <span>And User navigates back to the previous page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:07:21 pm</td>
+<td>
+<a href="#" class="linked" test-id='27' id='54'>Then User should be redirected to the home page with the message "New Account Created. You are logged in as "<Username>""</a>
+<div class="">
+<span class="badge badge-default">Registration.Registration scenario using data table.Then User should be redirected to the home page with the message "New Account Created. You are logged in as "<Username>""</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
